@@ -4,4 +4,4 @@ The details about the project, previous work, our contributions, and our results
 ### Results
 No Training       |  Early stage of Training       |  Later Stage of Training
 :-------------------------:|:------------------------:|:-------------------------:|
-![](Double-DQN/videos_modified/pong_modified_300.gif)  |  ![](DQN/videos/breakout_5000.gif)  |  ![](DQN/videos/boxing_500.gif)
+![](No-training.gif)  |  ![](early-stage.gif)  |  ![](later-stage.gif)
