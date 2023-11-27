@@ -1,6 +1,3 @@
-#########################################################################################################
-### Source : https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py #########
-#########################################################################################################
 cv2.ocl.setUseOpenCL(False) # disable GPU usage by OpenCV
 
 def make_atari_env(env_id, episodic_life=True, clip_rewards=True, stack_frames=True, scale=False):
@@ -247,6 +244,10 @@ class ImageToPyTorch(gym.ObservationWrapper):
         old_shape = self.observation_space.shape
         self.observation_space = gym.spaces.Box(low=0.0, high=1.0, shape=(old_shape[-1], old_shape[0], old_shape[1]),
                                                 dtype=np.uint8)
+
+#########################################################################################################
+### Source : https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py #########
+#########################################################################################################
 
     def observation(self, observation):
         return np.swapaxes(observation, 2, 0)
