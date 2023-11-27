@@ -245,10 +245,11 @@ class ImageToPyTorch(gym.ObservationWrapper):
         self.observation_space = gym.spaces.Box(low=0.0, high=1.0, shape=(old_shape[-1], old_shape[0], old_shape[1]),
                                                 dtype=np.uint8)
 
-#########################################################################################################
-### Source : https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py #########
-#########################################################################################################
-
     def observation(self, observation):
         return np.swapaxes(observation, 2, 0)
 
+
+
+#########################################################################################################
+### Source : https://github.com/openai/baselines/blob/master/baselines/common/atari_wrappers.py #########
+#########################################################################################################
